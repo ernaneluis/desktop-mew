@@ -1,0 +1,22 @@
+{
+  "name": "desktop-mew",
+  "version": "1.0.0",
+  "description": "A Desktop wrapper of MyEtherWallet(MEW) https://www.myetherwallet.com/ using https://electronjs.org/",
+  "main": "index.js",
+  "repository": "https://github.com/ernaneluis/desktop-mew.git",
+  "author": "Ernane Luis <ernane.luis@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "mew:get": "git clone https://github.com/kvhnuke/etherwallet.git mew",
+    "mew:install": "cd mew && yarn install",
+    "gulp:get": "npm install -g gulp-cli",
+    "mew:build": "cd mew && yarn dist",
+    "prebuild": "cp -af mew/chrome-extension/. build/ && cp -af prebuild/. build/",
+    "build:mac": "electron-packager build/ --platform=darwin --out=app --overwrite --icon=build/icon.icns",
+    "build:all": "electron-packager build/ --all --out=app --overwrite --icon=build/icon.icns"
+  },
+  "dependencies": {
+    "electron": "^2.0.3",
+    "electron-packager": "^12.1.0"
+  }
+}
