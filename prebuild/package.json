@@ -1,0 +1,22 @@
+{
+  "name": "MyEtherWallet",
+  "version": "1.0.0",
+  "description": "A Desktop wrapper of MyEtherWallet(MEW) https://www.myetherwallet.com/ using https://electronjs.org/",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/ernaneluis/desktop-mew.git",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Ernane Luis <ernane.luis@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^2.0.0"
+  }
+}
